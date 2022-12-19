@@ -35,11 +35,12 @@ function promptUser() {
           .then((data) => {
             document.getElementById("post-title").innerHTML =
               data.data.children[0].data.title;
-            document.getElementById("post-body").innerHtml =
-              '<img src="' + data.data.children[0].data.thumbnail + '"/>';
-
-            document.getElementById("sub-reddit").innerHTML =
+              document.getElementById("post-body").innerHTML =
+              data.data.children[0].data.selftext_html;
+            document.getElementById("comment-sub-reddit").innerHTML =
               data.data.children[0].data.subreddit;
+              document.getElementById("comment-upvotes").innerHTML =
+            data.data.children[0].data.ups;
           });
       let commentSub =
         "https://www.reddit.com/r/" + data.data.children[0].data.subreddit;

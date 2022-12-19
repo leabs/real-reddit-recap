@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <title></title>
-    <meta name="description" content="" />
+    <meta
+      name="description"
+      content="Real reddit recap, where you can see the true year end summary of your comments and posts without reddit removing subreddits."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <meta property="og:title" content="" />
@@ -27,18 +30,13 @@
       <div class="columns reverse-columns is-desktop">
         <div class="column is-6">
           <div class="post-wrapper">
-            <div class="columns is-mobile">
-              <div class="column">
-                <p class="post-text" id="comment"></p>
-                <br />
-                <span>Upvotes: </span><span id="upvotes"></span>
-                <br />
-                <a class="button sub-button" id="myLink"
-                  >r/<span id="sub-reddit"></span
-                ></a>
-                
-              </div>
-            </div>
+            <p class="post-text" id="comment"></p>
+            <br />
+            <span>Upvotes: </span><span id="upvotes"></span>
+            <br />
+            <a class="button sub-button" id="myLink"
+              >r/<span id="sub-reddit"></span
+            ></a>
           </div>
         </div>
         <div class="column is-6 right-column">
@@ -70,35 +68,40 @@
           <h4 class="sub-title">The internet has spoken</h4>
         </div>
       </div>
-      <div class="columns is-desktop">
-        <div class="column is-6">
-          <div class="">
-            <div class="columns is-mobile">
-              <div class="column">
-                <h1 class="custom-title">
-                  Your
-                  <a
-                    href="https://piunikaweb.com/2022/12/09/reddit-recap-2022-doesnt-show-nsfw-some-users-arent-happy/"
-                    style="color: #fff"
-                    target="_blank"
-                    ><span
-                      style="font-style: italic; text-decoration: underline"
-                      >real</span
-                    ></a
-                  >
-                  top post this year
-                </h1>
-                <br />
-                <h4 class="sub-title">The internet has spoken</h4>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="columns non-reverse-columns is-desktop">
         <div class="column is-6 right-column">
+
+          <h4
+            class="sub-title"
+            id="username"
+            style="color: white; display: inline-block"
+          ></h4>
+          <br />
+          <h2 class="custom-title">
+            Your
+            <a
+              href="https://piunikaweb.com/2022/12/09/reddit-recap-2022-doesnt-show-nsfw-some-users-arent-happy/"
+              style="color: #fff"
+              target="_blank"
+              ><span style="font-style: italic; text-decoration: underline"
+                >real</span
+              ></a
+            >
+            top post this year
+          </h2>
+          <br />
+
+        </div>
+        <div class="column is-6">
           <div class="post-wrapper">
-            <span id="post-title"></span>
+            <p class="post-text" id="post-title"></p>
             <p class="post-text" id="post-body"></p>
-            <img src="" id="post-image" alt="" />
+            <br />
+            <span>Upvotes: </span><span id="comment-upvotes"></span>
+            <br />
+            <a class="button sub-button" id="myLink"
+              >r/<span id="comment-sub-reddit"></span
+            ></a>
           </div>
         </div>
       </div>

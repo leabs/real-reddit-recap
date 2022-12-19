@@ -344,17 +344,13 @@ h1 {
 }
 @media screen and (max-width: 769px) {
   .columns{
-    
     padding:10px;
   }
-  .columns:nth-child(1){
-    margin-top:40px;
-  }
+
   .main-columns{
     height: 100vh;
   }
   .column{
-    
     margin: 24px auto;
   }
 }
@@ -375,6 +371,10 @@ h1 {
 @media(max-width: 767px) { /* <== You can change this break point as per your  needs */
   .reverse-columns {
     flex-direction: column-reverse;
+    display: flex;
+  }
+  .non-reverse-columns {
+    flex-direction: column;
     display: flex;
   }
 }
