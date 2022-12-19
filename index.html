@@ -24,28 +24,35 @@
 
   <body>
     <div class="container">
-      <div class="columns is-desktop">
+      <div class="columns reverse-columns is-desktop">
         <div class="column is-6">
           <div class="post-wrapper">
-            <p class="post-text">Some comment here idk hey mom!</p>
-            <a class="button sub-button">r/SomeSub</a>
-            <a href=""
-              ><img
-                style="
-                  position: relative;
-                  right: -60%;
-                  bottom: -20px;
-                  color: grey;
-                "
-                src="img/external-link.svg"
-                alt="external link"
-                class="external-link"
-              />
-            </a>
+            <div class="columns is-mobile">
+              <div class="column">
+                <p class="post-text" id="comment"></p>
+                <br />
+                <span>Upvotes: </span><span id="upvotes"></span>
+                <br />
+                <a class="button sub-button" id="myLink"
+                  >r/<span id="sub-reddit"></span
+                ></a>
+                
+              </div>
+            </div>
           </div>
         </div>
         <div class="column is-6 right-column">
-          <div class="badge">real reddit recap</div>
+          <div class="badge" style="display: inline-block">
+            real reddit recap
+          </div>
+          <h4 class="sub-title" style="color: white; display: inline-block">
+            for
+          </h4>
+          <h4
+            class="sub-title"
+            id="username"
+            style="color: white; display: inline-block"
+          ></h4>
           <br />
           <h1 class="custom-title">
             Your
@@ -63,11 +70,43 @@
           <h4 class="sub-title">The internet has spoken</h4>
         </div>
       </div>
+      <div class="columns is-desktop">
+        <div class="column is-6">
+          <div class="">
+            <div class="columns is-mobile">
+              <div class="column">
+                <h1 class="custom-title">
+                  Your
+                  <a
+                    href="https://piunikaweb.com/2022/12/09/reddit-recap-2022-doesnt-show-nsfw-some-users-arent-happy/"
+                    style="color: #fff"
+                    target="_blank"
+                    ><span
+                      style="font-style: italic; text-decoration: underline"
+                      >real</span
+                    ></a
+                  >
+                  top post this year
+                </h1>
+                <br />
+                <h4 class="sub-title">The internet has spoken</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-6 right-column">
+          <div class="post-wrapper">
+            <span id="post-title"></span>
+            <p class="post-text" id="post-body"></p>
+            <img src="" id="post-image" alt="" />
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+
     <script src="js/plugins.js"></script>
     <script type="module" src="js/main.js"></script>
-
   </body>
 </html>
