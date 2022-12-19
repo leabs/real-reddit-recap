@@ -4,9 +4,9 @@
 //prompt user to enter their username
 function promptUser() {
   let username = prompt("Enter your Reddit username");
-  document.body.style.display = "none";
+
   if (username != null) {
-    document.body.style.display = "block";
+
     document.getElementById("username").innerHTML = username;
 
     document.getElementById("username").innerHTML = username;
