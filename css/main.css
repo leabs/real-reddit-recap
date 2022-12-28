@@ -306,6 +306,11 @@ h1 {
 }
 .sub-button {
   color: #fff !important;
+  background: rgb(255, 69, 0);
+  padding: 6px 12px;
+  border-radius: 4px;
+  margin: 6px 0;
+  width: fit-content;
 }
 .share-button {
   background:#fff !important;

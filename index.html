@@ -2,17 +2,17 @@
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Real Reddit Recap</title>
     <meta
       name="description"
       content="Real reddit recap, where you can see the true year end summary of your comments and posts without reddit removing subreddits."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
+    <meta property="og:title" content="Real Reddit Recap" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://real-recap.vercel.app/" />
+    <meta property="og:image" content="https://real-recap.vercel.app/icon.png" />
 
     <link rel="manifest" href="site.webmanifest" />
     <link rel="apple-touch-icon" href="icon.png" />
@@ -25,8 +25,8 @@
     <meta name="theme-color" content="rgb(255, 69, 0)" />
   </head>
 
-  <body >
-    <div class="container">
+  <body>
+    <div class="container"  >
       <div class="columns reverse-columns is-desktop">
         <div class="column is-6">
           <div class="post-wrapper">
@@ -34,9 +34,9 @@
             <br />
             <span>Upvotes: </span><span id="upvotes"></span>
             <br />
-            <a class="button sub-button" id="myLink"
+            <p class="sub-button" id="myLink"
               >r/<span id="sub-reddit"></span
-            ></a>
+            ></p>
           </div>
         </div>
         <div class="column is-6 right-column">
@@ -70,7 +70,6 @@
       </div>
       <div class="columns non-reverse-columns is-desktop">
         <div class="column is-6 right-column">
-
           <h4
             class="sub-title"
             id="username"
@@ -90,7 +89,6 @@
             top post this year
           </h2>
           <br />
-
         </div>
         <div class="column is-6">
           <div class="post-wrapper">
@@ -99,18 +97,12 @@
             <br />
             <span>Upvotes: </span><span id="comment-upvotes"></span>
             <br />
-            <a class="button sub-button" id="myLink"
+            <p class="sub-button" id="myLink"
               >r/<span id="comment-sub-reddit"></span
-            ></a>
+            ></p>
           </div>
         </div>
-        
       </div>
-      <div style="text-align:center">
-      <a class="button share-button">Share</a>
-    </div>
-    </div>
-
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
 
     <script src="js/plugins.js"></script>
